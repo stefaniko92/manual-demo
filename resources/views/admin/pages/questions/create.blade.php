@@ -31,7 +31,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary me-2">Save</button>
-                        <button class="btn btn-secondary">Cancel</button>
+                        <a href="{{ route('questions.index') }}" class="btn btn-secondary">Cancel</a>
                     </form>
 
                 </div>

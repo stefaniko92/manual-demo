@@ -68,9 +68,11 @@
                                     @endforeach
                                 </ul>
                             </div>
-
                         </div>
                     @endforeach
+                </div>
+                <div class="card-footer">
+                    <a href="{{ route('questions.index') }}" class="btn btn-secondary">BACK</a>
                 </div>
             </div>
         </div>

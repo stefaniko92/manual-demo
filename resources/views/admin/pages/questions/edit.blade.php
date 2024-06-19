@@ -24,7 +24,7 @@
                             <textarea class="form-control" name="text" id="text" rows="5" spellcheck="false">{{ $question->text }}</textarea>
                         </div>
                         <button type="submit" class="btn btn-primary me-2">Save</button>
-                        <a href="{{ route('products.index') }}" class="btn btn-secondary">Cancel</a>
+                        <a href="{{ route('questions.index') }}" class="btn btn-secondary">Cancel</a>
                     </form>
                 </div>
             </div>

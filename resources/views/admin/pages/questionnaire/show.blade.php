@@ -23,7 +23,8 @@
                         <p>{{ $question->text }}</p>
                         @foreach ($question->answers as $answer)
                             <div class="row mt-2">
-                                <p><strong>Answer ID: </strong>{{ $answer->id }} <strong>Answer:</strong> {{ $answer->text }}</p>
+                                <p><strong>Answer ID: </strong>{{ $answer->id }}
+                                    <strong>Answer:</strong> {{ $answer->text }}</p>
                                 <div class="col-md-6">
                                     <p><strong>Behaviours:</strong></p>
                                     @if($answer->behaviours->count() > 0)
@@ -88,6 +89,13 @@
                     </div>
                 </div>
             @endforeach
+        </div>
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-footer">
+                    <a href="{{ route('questionnaire.index') }}" class="btn btn-secondary">BACK</a>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

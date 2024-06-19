@@ -57,7 +57,8 @@
             </div>
         </div>
     </div>
-
+@endsection
+@push('custom-scripts')
     <script>
         let behaviourIndex = {{ count($answer->behaviours) }};
         let restrictionIndex = {{ count($answer->restrictions ?? []) }};
@@ -156,4 +157,4 @@
             }
         }
     </script>
-@endsection
+@endpush
